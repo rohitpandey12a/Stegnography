@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".Decrypt">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+	    tools:ignore="ContentDescription" />
+	
+	<Button
+		android:id="@+id/choose_image_button"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBottom="@id/imageview"
+		android:layout_centerHorizontal="true"
+		android:layout_marginBottom="-53dp"
+		android:text="@string/choose_image" />
+	
+	<TextView
+		android:id="@+id/textView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/choose_image_button"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="70dp"
+		android:layout_marginEnd="0dp"
+		android:layout_toStartOf="@+id/choose_image_button"
+		android:text="@string/secret_key"
+		android:textAlignment="center"
+		android:textAllCaps="false"
+		android:textAppearance="@style/TextAppearance.AppCompat.Button"
+		android:textSize="16sp"
+		android:textStyle="bold" />
+	
+	<TextView
+		android:id="@+id/textView3"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignStart="@+id/textView"
+		android:layout_alignBottom="@+id/textView"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginStart="-3dp"
+		android:layout_marginTop="10dp"
+		android:layout_marginBottom="-53dp"
+		android:text="First Name"
+		android:textAlignment="center"
+		android:textAllCaps="false"
+		android:textAppearance="@style/TextAppearance.AppCompat.Button"
+		android:textSize="16sp"
+		android:textStyle="bold" />
+	
+	<TextView
+		android:id="@+id/textView4"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignStart="@+id/textView"
+		android:layout_alignBottom="@+id/editTextaddress"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginStart="-2dp"
+		android:layout_marginBottom="270dp"
+		android:text="Last Name"
+		android:textAlignment="center"
+		android:textAllCaps="false"
+		android:textAppearance="@style/TextAppearance.AppCompat.Button"
+		android:textSize="16sp"
+		android:textStyle="bold" />
+	
+	<TextView
+		android:id="@+id/textView5"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignStart="@+id/textView"
+		android:layout_alignBottom="@+id/editTextaddress"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginStart="0dp"
+		android:layout_marginBottom="224dp"
+		android:text="Number"
+		android:textAlignment="center"
+		android:textAllCaps="false"
+		android:textAppearance="@style/TextAppearance.AppCompat.Button"
+		android:textSize="16sp"
+		android:textStyle="bold" />
+	
+	<TextView
+		android:id="@+id/textView6"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignStart="@+id/textView"
+		android:layout_alignBottom="@+id/editTextaddress"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginStart="2dp"
+		android:layout_marginBottom="173dp"
+		android:text="Email"
+		android:textAlignment="center"
+		android:textAllCaps="false"
+		android:textAppearance="@style/TextAppearance.AppCompat.Button"
+		android:textSize="16sp"
+		android:textStyle="bold" />
+	
+	<TextView
+		android:id="@+id/textView7"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignStart="@+id/textView"
+		android:layout_alignBottom="@+id/editTextaddress"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginStart="-1dp"
+		android:layout_marginBottom="119dp"
+		android:text="DOB"
+		android:textAlignment="center"
+		android:textAllCaps="false"
+		android:textAppearance="@style/TextAppearance.AppCompat.Button"
+		android:textSize="16sp"
+		android:textStyle="bold" />
+	
+	<TextView
+		android:id="@+id/textView8"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignStart="@+id/textView"
+		android:layout_alignBottom="@+id/editTextaddress"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginStart="-1dp"
+		android:layout_marginBottom="64dp"
+		android:text="Gender"
+		android:textAlignment="center"
+		android:textAllCaps="false"
+		android:textAppearance="@style/TextAppearance.AppCompat.Button"
+		android:textSize="16sp"
+		android:textStyle="bold" />
+	
+	<TextView
+		android:id="@+id/textView9"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignStart="@+id/textView"
+		android:layout_alignBottom="@+id/editTextaddress"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginStart="0dp"
+		android:layout_marginBottom="8dp"
+		android:text="Address"
+		android:textAlignment="center"
+		android:textAllCaps="false"
+		android:textAppearance="@style/TextAppearance.AppCompat.Button"
+		android:textSize="16sp"
+		android:textStyle="bold" />
+	
+	
+	<EditText
+		android:id="@+id/secret_key"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBottom="@+id/textView"
+		android:layout_alignParentEnd="true"
+		android:layout_marginEnd="97dp"
+		android:layout_marginBottom="6dp"
+		android:ems="10"
+		android:hint="@string/enter_secret_key"
+		android:importantForAutofill="no"
+		android:inputType="textPassword"
+		android:textSize="14sp" />
+	
+	<EditText
+		android:id="@+id/editTextTextFirstName"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBottom="@+id/textView"
+		android:layout_alignParentEnd="true"
+		android:layout_marginEnd="95dp"
+		android:layout_marginBottom="-64dp"
+		android:ems="10"
+		android:hint="@string/enter_secret_key"
+		android:importantForAutofill="no"
+		android:textSize="14sp" />
+	
+	<EditText
+		android:id="@+id/editTextTextLastName"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBottom="@+id/textView"
+		android:layout_alignParentEnd="true"
+		android:layout_marginEnd="94dp"
+		android:layout_marginBottom="-116dp"
+		android:ems="10"
+		android:hint="@string/enter_secret_key"
+		android:importantForAutofill="no"
+		android:textSize="14sp" />
+	
+	<EditText
+		android:id="@+id/editTextPhone"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBottom="@+id/textView"
+		android:layout_alignParentEnd="true"
+		android:layout_marginEnd="94dp"
+		android:layout_marginBottom="-164dp"
+		android:ems="10"
+		android:importantForAutofill="no"
+		android:textSize="14sp" />
+	
+	<EditText
+		android:id="@+id/editTextTextEmailAddress"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBottom="@+id/textView"
+		android:layout_alignParentEnd="true"
+		android:layout_marginEnd="95dp"
+		android:layout_marginBottom="-220dp"
+		android:ems="10"
+		android:hint="@string/enter_secret_key"
+		android:importantForAutofill="no"
+		android:textSize="14sp" />
+	
+	<EditText
+		android:id="@+id/editTextDate"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBottom="@+id/textView"
+		android:layout_alignParentEnd="true"
+		android:layout_marginEnd="94dp"
+		android:layout_marginBottom="-273dp"
+		android:ems="10"
+		android:hint="@string/enter_secret_key"
+		android:importantForAutofill="no"
+		android:textSize="14sp" />
+	
+	<EditText
+		android:id="@+id/editTextGender"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBottom="@+id/textView"
+		android:layout_alignParentEnd="true"
+		android:layout_marginEnd="98dp"
+		android:layout_marginBottom="-327dp"
+		android:ems="10"
+		android:hint="@string/enter_secret_key"
+		android:importantForAutofill="no"
+		android:textSize="14sp" />
+	
+	<EditText
+        android:id="@+id/editTextaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/decode_button"
+        android:layout_alignStart="@+id/secret_key"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="@string/your_message"
+        android:inputType="textPersonName"
+	    android:importantForAutofill="no"
+		android:textSize="14sp"/>
+	
+	<Button
+        android:id="@+id/decode_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/decode"
+        android:textAlignment="center"
+        android:textSize="14sp"
+	    android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/whether_decoded"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold" />
+	
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "877776345677",
+    "project_id": "stegnography-fd34f",
+    "storage_bucket": "stegnography-fd34f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:877776345677:android:9275a2eeeefc3114be5a04",
+        "android_client_info": {
+          "package_name": "com.example.stegnography"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "877776345677-bck7o8adqbj9a9o6dq1e1v7gq74qt6pn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIQ-FimXx1mlrEDdt7ZFRPdZz5gf163As"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "877776345677-bck7o8adqbj9a9o6dq1e1v7gq74qt6pn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

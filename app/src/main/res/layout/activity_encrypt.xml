@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".Encrypt">
+	
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+	    android:contentDescription="@string/image_for_encoding" />
+	<TextView
+		android:id="@+id/imageName"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_above="@+id/getImage"
+		android:layout_below="@+id/imageview"
+		android:layout_centerInParent="true"/>
+	<Button
+		android:id="@+id/getImage"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_above="@id/choose_image_button"
+		android:layout_centerInParent="true"
+		android:text="@string/get_images" />
+	
+	<Button
+        android:id="@+id/choose_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+		android:layout_marginBottom="10dp"
+        android:text="@string/choose_image" />
+	
+	<TextView
+		android:id="@+id/textView2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/choose_image_button"
+		android:layout_alignStart="@+id/textView"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginStart="70dp"
+		android:layout_marginTop="31dp"
+		android:text="@string/secret_key"
+		android:textAlignment="center"
+		android:textAllCaps="false"
+		android:textAppearance="@style/TextAppearance.AppCompat.Button"
+		android:textSize="16sp"
+		android:textStyle="bold"
+		tools:ignore="UnknownIdInLayout" />
+	
+	<EditText
+		android:id="@+id/secret_key"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/choose_image_button"
+		android:layout_alignBaseline="@+id/textView2"
+		android:layout_alignBottom="@+id/textView2"
+		android:layout_alignParentEnd="true"
+		android:layout_marginTop="113dp"
+		android:layout_marginEnd="51dp"
+		android:layout_marginBottom="-13dp"
+		android:ems="10"
+		android:hint="@string/enter_secret_key"
+		android:inputType="textPassword"
+		android:textSize="14sp"
+		android:importantForAutofill="no" />
+	
+	<Button
+		android:id="@+id/encode_button"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginEnd="30dp"
+		android:layout_marginBottom="135dp"
+		android:layout_toStartOf="@+id/secret_key"
+		android:text="@string/encode"
+		android:textAlignment="center"
+		android:textSize="14sp" />
+	
+	<Button
+        android:id="@+id/save_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/secret_key"
+        android:layout_alignTop="@+id/encode_button"
+        android:layout_marginEnd="36dp"
+        android:text="@string/save_image" />
+
+    <TextView
+        android:id="@+id/whether_encoded"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold" />
+	
+</RelativeLayout>
